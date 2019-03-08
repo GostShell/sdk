@@ -8,9 +8,18 @@ repositories {
     mavenCentral()
 }
 
+apply plugin: 'java'
+
+group = 'com.evergarden.sdk'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
 dependencies {
     //dependencies
     compile 'com.google.guava:guava:21.0'
+
+    // felix framework
+    compile group: 'org.apache.felix', name: 'org.apache.felix.framework', version: '6.0.2'
 
     //junit test
     testCompile group: 'junit', name: 'junit', version: '4.12'
