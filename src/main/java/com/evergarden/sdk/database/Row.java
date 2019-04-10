@@ -63,7 +63,7 @@ public class Row implements DBGenerator{
     @Override
     public String compile() {
         Builder result = new Builder();
-        result.write(name).write(typeRow.getName())
+        result.write(name).write(typeRow.getName());
         return null;
     }
 }
