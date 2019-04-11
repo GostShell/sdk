@@ -1,5 +1,7 @@
 package com.evergarden.sdk.database;
 
+import org.jooq.DSLContext;
+
 public class Table implements Migration {
     String name;
 
@@ -8,4 +10,8 @@ public class Table implements Migration {
         return this;
     }
 
+    @Override
+    public void execute(DSLContext jooq) {
+
+    }
 }
