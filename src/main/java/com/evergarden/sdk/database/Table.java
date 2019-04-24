@@ -14,4 +14,9 @@ public class Table implements Migration {
     public void execute(DSLContext jooq) {
 
     }
+
+    @Override
+    public void execute(String text) {
+
+    }
 }
