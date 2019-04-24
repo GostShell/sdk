@@ -5,4 +5,5 @@ import org.jooq.DSLContext;
 
 public interface Migration {
     void execute(DSLContext jooq);
+    void execute(String text);
 }

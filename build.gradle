@@ -22,22 +22,22 @@ sourceCompatibility = 1.8
 
 dependencies {
     //dependencies
-    compile 'com.google.guava:guava:21.0'
+    implementation 'com.google.guava:guava:21.0'
 
     // felix framework
-    compile group: 'org.apache.felix', name: 'org.apache.felix.framework', version: '6.0.2'
+    implementation group: 'org.apache.felix', name: 'org.apache.felix.framework', version: '6.0.2'
     
     //jooq sql lib
-    compile group: 'org.jooq', name: 'jooq', version: '3.11.10'
+    implementation group: 'org.jooq', name: 'jooq', version: '3.11.10'
 
     //osgi annotation
-    compile group: 'org.osgi',name: 'org.osgi.service.component.annotations', version: '1.4.0'
+    implementation group: 'org.osgi',name: 'org.osgi.service.component.annotations', version: '1.4.0'
+
+    implementation group: 'org.osgi',name: 'org.osgi.annotation', version: '6.0.0'
+
+    implementation group: 'org.osgi',name: 'org.osgi.service.metatype.annotations', version: '1.4.0'
     
-    compile group: 'org.osgi',name: 'org.osgi.annotation', version: '6.0.0'
-    
-    compile group: 'org.osgi',name: 'org.osgi.service.metatype.annotations', version: '1.4.0'
-    
-    compile group: 'org.osgi',name: 'org.osgi.service.component', version: '1.4.0'
+    implementation group: 'org.osgi',name: 'org.osgi.service.component', version: '1.4.0'
 
 
     //junit test
@@ -58,7 +58,7 @@ jar {
     manifest {
         attributes(
                 '-sources': 'true',
-                'Export-Package':'com.evergarden.sdk',
+                'Export-Package':'com.evergarden.sdk.database;com.evergarden.sdk.api;com.evergarden.sdk.event',
                 'Automatic-Module-Name': "SDK",
                 'Bundle-Name': "SDK",
                 'Bundle-SymbolicName': "SDK",
