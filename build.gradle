@@ -24,6 +24,16 @@ dependencies {
     //jooq sql lib
     compile group: 'org.jooq', name: 'jooq', version: '3.11.10'
 
+    //osgi annotation
+    compile group: 'org.osgi',name: 'org.osgi.service.component.annotations', version: '1.4.0'
+    
+    compile group: 'org.osgi',name: 'org.osgi.annotation', version: '6.0.0'
+    
+    compile group: 'org.osgi',name: 'org.osgi.service.metatype.annotations', version: '1.4.0'
+    
+    compile group: 'org.osgi',name: 'org.osgi.service.component', version: '1.4.0'
+
+
     //junit test
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
