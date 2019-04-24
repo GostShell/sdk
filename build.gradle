@@ -22,22 +22,22 @@ sourceCompatibility = 1.8
 
 dependencies {
     //dependencies
-    implementation 'com.google.guava:guava:21.0'
+    compile 'com.google.guava:guava:21.0'
 
     // felix framework
-    implementation group: 'org.apache.felix', name: 'org.apache.felix.framework', version: '6.0.2'
+    compile group: 'org.apache.felix', name: 'org.apache.felix.framework', version: '6.0.2'
     
     //jooq sql lib
-    implementation group: 'org.jooq', name: 'jooq', version: '3.11.10'
+    compile group: 'org.jooq', name: 'jooq', version: '3.11.10'
 
     //osgi annotation
-    implementation group: 'org.osgi',name: 'org.osgi.service.component.annotations', version: '1.4.0'
+    compile group: 'org.osgi',name: 'org.osgi.service.component.annotations', version: '1.4.0'
 
-    implementation group: 'org.osgi',name: 'org.osgi.annotation', version: '6.0.0'
+    compile group: 'org.osgi',name: 'org.osgi.annotation', version: '6.0.0'
 
-    implementation group: 'org.osgi',name: 'org.osgi.service.metatype.annotations', version: '1.4.0'
-    
-    implementation group: 'org.osgi',name: 'org.osgi.service.component', version: '1.4.0'
+    compile group: 'org.osgi',name: 'org.osgi.service.metatype.annotations', version: '1.4.0'
+
+    compile group: 'org.osgi',name: 'org.osgi.service.component', version: '1.4.0'
 
 
     //junit test
